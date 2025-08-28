@@ -8,14 +8,16 @@ const HomeItem = ({item}) => {
       <div className="company-name">{item.company}</div>
       <div className="item-name">{item.item_name}</div>
       <div className="price">
-          <span className="current-price">Rs ${item.current_price}</span>
-          <span className="original-price">Rs ${item.original_price}</span>
-          <span className="discount">(${item.discount_percentage}% OFF)</span>
+          <span className="current-price">Rs {item.current_price}</span>
+          <span className="original-price">Rs {item.original_price}</span>
+          <span className="discount">({item.discount_percentage}% OFF)</span>
       </div>
-      <button className="btn-add-bag" onclick = { () => console.log ("item was clicked")}>Add to Bag</button>{()}
-    </div>`
-
+      <button
+       className="btn-add-bag" onclick = { () => console.log ("item was clicked")}>
+        Add to Bag</button>
+    </div>
   );
-}
+
+};
 
 export default HomeItem;

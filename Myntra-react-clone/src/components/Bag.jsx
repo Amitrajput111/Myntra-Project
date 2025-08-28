@@ -16,6 +16,7 @@ const Bag = () => {
     </main>
      <Footer/>
    </>
+  )
    }
 
 export default Bag;
