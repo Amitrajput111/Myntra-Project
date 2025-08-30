@@ -20,7 +20,7 @@ const Bag = () => {
     <main>
       <div className="bag-page">
         <div className="bag-items-container">
-          <BagItem Item ={}/>
+          <BagItem Item ={item}/>
         </div>
         <div className="bag-summary">
         </div>
