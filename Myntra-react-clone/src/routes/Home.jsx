@@ -1,11 +1,7 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import HomeItem from "./components/HomeItem";
+import HomeITem from "../"components/HomeItem";
 
-
-function App() {
-
-  const item =
+const Home = () => {
+   const item =
     {
         id: '001',
         image: 'images/1.jpg',
@@ -21,20 +17,13 @@ function App() {
             count: 1400,
         },
       };
+  return (
 
-    return (
-      <>
-      <Header/> 
-    
-    <main>
+     <main>
         <div className="items-container">
           <HomeItem item ={item} /> 
         </div>
     </main>
-    <Footer></Footer>
-    
-      </>
-    );
+  );
 }
-export default App;
-
+export default Home;
