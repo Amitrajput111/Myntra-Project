@@ -7,7 +7,8 @@ const Header = () => {
 return (
   <header>
         <div className="logo_container">
-            <link href="#"><img className="myntra_home" src="images/myntra_logo.webp" alt="Myntra Home"/></a>
+            <link href="#"><img className="myntra_home" src="images/myntra_logo.webp" alt="Myntra Home"/>
+            </link>
         </div>
         <nav className="nav_bar">
             <a href="#">Men</a>

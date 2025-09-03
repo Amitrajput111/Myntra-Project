@@ -13,7 +13,7 @@ const HomeItem = ({item}) => {
           <span className="discount">({item.discount_percentage}% OFF)</span>
       </div>
       <button
-       className="btn-add-bag" onclick = { () => console.log ("item was clicked")}>
+       className="btn-add-bag" onClick = { () => console.log ("item was clicked")}>
         Add to Bag</button>
     </div>
   );
