@@ -327,3 +327,7 @@ header {
 a.action_container:link {
     color:black;
 }
+
+.spinner{
+    margin :100px 0px;
+}
