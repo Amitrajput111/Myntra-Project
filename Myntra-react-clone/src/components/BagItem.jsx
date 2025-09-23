@@ -1,3 +1,7 @@
+ import { useDispatch } from "react-redux";
+import { RiDeleteBin5Fill } from "react-icons/ri";
+import { bagActions } from "../store/bagSlice";
+
 const BagItem = ({item}) => {
     return(
      <div className="bag-item-container">
