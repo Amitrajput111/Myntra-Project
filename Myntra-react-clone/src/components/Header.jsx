@@ -2,13 +2,17 @@ import { BsFillPersonFill } from "react-icons/bs";
 import { GoHeartFill } from "react-icons/go";
 import { IoBagHandleSharp } from "react-icons/io5";
 import {Link} from "react-router-dom"
+import {useSelector} from "react-redux";
+
 
 const Header = () => {
+const bag = useSelector (store => store.bag);
+
 return (
   <header>
         <div className="logo_container">
-            <link href="#"><img className="myntra_home" src="images/myntra_logo.webp" alt="Myntra Home"/>
-            </link>
+            <Link to="/"><img className="myntra_home" src="images/myntra_logo.webp" alt="Myntra Home"/>
+            </Link>
         </div>
         <nav className="nav_bar">
             <a href="#">Men</a>

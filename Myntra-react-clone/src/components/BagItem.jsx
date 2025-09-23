@@ -1,4 +1,4 @@
-const BagItems = ({item}) => {
+const BagItem = ({item}) => {
     return(
      <div className="bag-item-container">
     <div className="item-left-part">
@@ -14,7 +14,7 @@ const BagItems = ({item}) => {
         <span className="discount-percentage">({item.discount_percentage}% OFF)</span>
       </div>
       <div className="return-period">
-        <span className="return-period-days">${item.return_period} days</span> return available
+        <span className="return-period-days">{item.return_period} days</span> return available
       </div>
       <div className="delivery-details">
         Delivery by
@@ -22,11 +22,11 @@ const BagItems = ({item}) => {
       </div>
     </div>
 
-    <div className="remove-from-cart" onClick={ ()console.log("Item removed from cart")}>
+    <div className="remove-from-cart" onClick={() => console.log("Item removed from cart")}>
     X</div>
-  </div>`;
+  </div>
 
   );
 };
 
-export default BagItems;
+export default BagItem;

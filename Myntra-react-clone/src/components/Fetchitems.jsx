@@ -16,13 +16,13 @@ const FetchItems = () => {
     dispatch(fetchStatusActions.markFetchingStarted());
 
 
-    fetch("http://localhost:5175/items", { signal })
+    fetch("http://localhost:8080/items", { signal })
       .then((res) => res.json())
       .then(({ items }) => {
         dispatch(fetchStatusActions.markFetchDone());
         dispatch(fetchStatusActions.markFetchingFinished());
 
-        dispatch(itemsActions.addInitialItems(items[0]));
+        dispatch(itemsActions.addInitialItems(items));
       });
 
     return () => {

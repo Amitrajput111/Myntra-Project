@@ -1,4 +1,6 @@
 
+import BagItem from "../components/BagItem";
+
 const Bag = () => {
    const item =
     {
@@ -20,7 +22,7 @@ const Bag = () => {
     <main>
       <div className="bag-page">
         <div className="bag-items-container">
-          <BagItem Item ={item}/>
+          <BagItem item={item}/>
         </div>
         <div className="bag-summary">
         </div>
