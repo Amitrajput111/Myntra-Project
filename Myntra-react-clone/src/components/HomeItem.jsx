@@ -1,7 +1,15 @@
 const HomeItem = ({item}) => {
   return (
      <div className="item-container">
-      <img className="item-image" src={item.image} alt="item image"/>
+      <img 
+        className="item-image" 
+        src={item.image} 
+        alt={`${item.company} - ${item.item_name}`}
+        onError={(e) => {
+          e.target.src = '/images/placeholder.jpg';
+          console.log('Failed to load image:', item.image);
+        }}
+      />
       <div className="rating">
           {item.rating.stars} ⭐ | {item.rating.count}
       </div>
@@ -17,7 +25,6 @@ const HomeItem = ({item}) => {
         Add to Bag</button>
     </div>
   );
-
 };
 
 export default HomeItem;

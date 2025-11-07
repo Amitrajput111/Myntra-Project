@@ -9,7 +9,6 @@ const Bag = () => {
     const itemIndex = bagItems.indexOf(item.id);
     return itemIndex >= 0;
   });
-
   return (
     <main>
       <div className="bag-page">
