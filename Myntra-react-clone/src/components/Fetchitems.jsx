@@ -22,12 +22,17 @@ const FetchItems = () => {
         dispatch(fetchStatusActions.markFetchingFinished());
 
         dispatch(itemsActions.addInitialItems(items));
+      })
+      .catch((err) => {
+        if (err.name !== 'AbortError') {
+          console.error('Fetch error:', err);
+        }
       });
 
     return () => {
       controller.abort();
     };
-  }, [fetchStatus]);
+  }, [fetchStatus, dispatch]);
 
   return <></>;
 };

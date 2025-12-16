@@ -3,6 +3,12 @@ import { RiDeleteBin5Fill } from "react-icons/ri";
 import { bagActions } from "../store/bagSlice";
 
 const BagItem = ({ item }) => {
+  const dispatch = useDispatch();
+
+  const handleRemoveFromBag = () => {
+    dispatch(bagActions.removeFromBag(item.id));
+  };
+
   return (
     <div className="bag-item-container">
       <div className="item-left-part">
@@ -10,8 +16,7 @@ const BagItem = ({ item }) => {
           className="bag-item-img"
           src={item.image}
           alt={`${item.company} - ${item.item_name}`}
-          onError={(e) => {
-            e.target.src = "/images/placeholder.jpg";
+          onError={() => {
             console.log("Failed to load image:", item.image);
           }}
         />
@@ -35,15 +40,13 @@ const BagItem = ({ item }) => {
           <span className="delivery-details-days">{item.delivery_date}</span>
         </div>
       </div>
-
       <div
         className="remove-from-cart"
-        onClick={() => console.log("Item removed from cart")}
+        onClick={handleRemoveFromBag}
       >
         X
       </div>
     </div>
   );
 };
-
 export default BagItem;

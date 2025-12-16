@@ -1,4 +1,3 @@
-import { createSlice } from "@reduxjs/toolkit";
 const Footer = () => {
   return (
     <footer>
@@ -16,6 +15,7 @@ const Footer = () => {
         </div>
         <div className="footer_column">
           <h3>ONLINE SHOPPING</h3>
+          
           <a href="#">Men</a>
           <a href="#">Women</a>
           <a href="#">Kids</a>
@@ -37,9 +37,7 @@ const Footer = () => {
       </div>
       <hr />
       <div className="copyright">
-        © 2025 www.myntra.com. All rights reserved.
-        By Amit Rajput 
-    
+        © 2025 www.myntra.com. All rights reserved. By Amit Rajput
       </div>
     </footer>
   );

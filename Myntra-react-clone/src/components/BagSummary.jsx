@@ -7,7 +7,6 @@ const BagSummary = () => {
     const itemIndex = bagItemIds.indexOf(item.id);
     return itemIndex >= 0;
   });
-
   const CONVENIENCE_FEES = 99;
   let totalItem = bagItemIds.length;
   let totalMRP = 0;

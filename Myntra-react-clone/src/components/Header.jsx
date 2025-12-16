@@ -12,7 +12,7 @@ const Header = () => {
         <Link to="/">
           <img
             className="myntra_home"
-            src="images/myntra_logo (1).webp"
+            src="/images/myntra_logo.webp"
             alt="Myntra Home"
           />
         </Link>
@@ -48,10 +48,11 @@ const Header = () => {
         <Link className="action_container" to="/bag">
           <IoBagHandleSharp />
           <span className="action_name"> Bag </span>
-          <span className="bag-item-count">0</span>
+          <span className="bag-item-count">{bag.length}</span>
         </Link>
       </div>
     </header>
   );
 };
+
 export default Header;
