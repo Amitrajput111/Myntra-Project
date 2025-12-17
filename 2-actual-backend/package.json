@@ -14,4 +14,19 @@
     "express": "^4.18.2",
     "react-icons": "^5.5.0"
   }
+  {
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.js"
+    }
+  ]
+}
 }
