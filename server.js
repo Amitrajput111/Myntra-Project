@@ -5,7 +5,7 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.use(express.static("public"));
+app.use(express.static("Myntra-react-clone/public"));
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -38,4 +38,7 @@ app.post("/items", async (req, res) => {
   res.status(201).json({ message: "Stored new item.", item: newItem });
 });
 
-app.listen(8080);
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
