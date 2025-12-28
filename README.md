@@ -1,30 +1,28 @@
-# Fashion E-commerce Web Application
+# Fashion E-Commerce Web Application
 
-A responsive fashion e-commerce frontend built with React and JavaScript.
+A modern, responsive fashion e-commerce frontend built with **React** and **JavaScript**, inspired by real-world platforms like Myntra.  
+Designed with a focus on **clean UI, reusable components, and realistic user flows**.
+
+## Live Demo
+👉 https://vercel.com/amitrajput111s-projects/myntra-project
 
 ## Tech Stack
 - React
 - JavaScript (ES6+)
-- HTML / CSS
+- CSS / Bootstrap
+- React Router
 
 ## Key Features
-- Product listing with category navigation
-- Product detail page
-- Cart functionality
-- Filters and sorting
-- Reusable React components
-- Responsive UI
-
-## What I Focused On
-- Component-driven architecture
-- Managing application state with React
-- Clean UI and UX principles
-- Modular folder structure
-
-## Live Demo
-[Add your live demo link here]
+- Product listing and category browsing
+- Product detail views
+- Cart add/remove functionality
+- Responsive design
+- Modular React component architecture
+- Loading states and smooth navigation
 
 ## Run Locally
-1. Clone the repository  
-2. Run `npm install`  
-3. Run `npm start`
+```bash
+git clone https://github.com/Amitrajput111/Myntra-Project.git
+cd Myntra-Project/frontend
+npm install
+npm start
