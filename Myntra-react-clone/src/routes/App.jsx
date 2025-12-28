@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
-import FetchItems from "../components/FetchItems.jsx";
+import FetchItems from "../components/Fetchitems.jsx";
 import { useSelector } from "react-redux";
 import LoadingSpinner from "../components/LoadingSpinner.jsx";
 
