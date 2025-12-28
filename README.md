@@ -4,7 +4,7 @@ A modern, responsive fashion e-commerce frontend built with **React** and **Java
 Designed with a focus on **clean UI, reusable components, and realistic user flows**.
 
 ## Live Demo
-👉 https://vercel.com/amitrajput111s-projects/myntra-project
+👉 https://myntra-project-kappa.vercel.app/
 
 ## Tech Stack
 - React
