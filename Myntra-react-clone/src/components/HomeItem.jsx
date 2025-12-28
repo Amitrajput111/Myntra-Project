@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { bagActions } from "../store/bagSlice";
+import { bagActions } from "../store/bagSlice.js";
 import { GrAddCircle } from "react-icons/gr";
 import { AiFillDelete } from "react-icons/ai";
 
