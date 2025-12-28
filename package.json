@@ -1,0 +1,13 @@
+{
+  "name": "myntra-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/2-actual-backend/server.js",
+  "scripts": {
+    "start": "node src/2-actual-backend/server.js",
+    "build": "cd Myntra-react-clone && npm install && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
