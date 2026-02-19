@@ -11,7 +11,7 @@ const Footer = () => {
           <a href="#">Home & Living</a>
           <a href="#">Beauty</a>
           <a href="#">Gift Card</a>
-          <a href="#">Myntra Insider</a>
+          <a href="#">MyStyle Insider</a>
         </div>
         <div className="footer_column">
           <h3>ONLINE SHOPPING</h3>
@@ -22,7 +22,7 @@ const Footer = () => {
           <a href="#">Home & Living</a>
           <a href="#">Beauty</a>
           <a href="#">Gift Card</a>
-          <a href="#">Myntra Insider</a>
+          <a href="#">MyStyle Insider</a>
         </div>
         <div className="footer_column">
           <h3>ONLINE SHOPPING</h3>
@@ -32,12 +32,12 @@ const Footer = () => {
           <a href="#">Home & Living</a>
           <a href="#">Beauty</a>
           <a href="#">Gift Card</a>
-          <a href="#">Myntra Insider</a>
+          <a href="#">MyStyle Insider</a>
         </div>
       </div>
       <hr />
       <div className="copyright">
-        © 2025 www.myntra.com. All rights reserved. By Amit Rajput
+        © 2025 www.mystyle.com. All rights reserved. By Amit Rajput
       </div>
     </footer>
   );

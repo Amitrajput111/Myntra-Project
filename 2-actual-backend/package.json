@@ -1,7 +1,7 @@
 {
-  "name": "kgcoding-myntra-backend",
+  "name": "kgcoding-mystyle-backend",
   "version": "1.0.0",
-  "description": "Myntra Clone Backend API",
+  "description": "MyStyle Clone Backend API",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"

@@ -3,7 +3,7 @@ import itemsSlice from "./itemsSlice.js";
 import fetchStatusSlice from "./fetchStatusSlice.js";
 import bagSlice from "./bagSlice.js";
 
-const myntraStore = configureStore({
+const mystyleStore = configureStore({
   reducer: {
     items: itemsSlice.reducer,
     fetchStatus: fetchStatusSlice.reducer,
@@ -11,4 +11,4 @@ const myntraStore = configureStore({
   },
 });
 
-export default myntraStore;
+export default mystyleStore;
